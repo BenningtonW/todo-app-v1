@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+flask
+flask_sqlalchemy
+flask_wtf
+flask_testing
+pytest
+pytest-cov
+=======
+flask
+flask_sqlalchemy
+flask_wtf
+flask_testing
+pytest
+pytest-cov
+>>>>>>> cf2fe337938e5bb787d2374d67ecd01438cbc3e5
