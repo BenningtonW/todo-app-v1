@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    environment {
+        DATABASE_URI = credentials("DATABASE_URI")
+    }
+    stages {
+        stage('Setup') {
+            steps {
+                sh "bash Jenkins/setup.sh"
+            }
+        }
+        stage('Test') {
+            steps {
+                sh "bash Jenkins/test.sh"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh "bash Jenkins/deploy.sh"
+            }
+        }
+    }
+}
